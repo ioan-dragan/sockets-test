@@ -14,6 +14,7 @@ class ServerSocket: private Socket
   const ServerSocket& operator << ( const std::string& ) const;
   const ServerSocket& operator >> ( std::string& ) const;
   void accept(ServerSocket & );
+  
 };
 
 #endif

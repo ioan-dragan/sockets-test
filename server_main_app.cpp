@@ -11,6 +11,7 @@ int main(int argc, int argv[]){
     while(1){
       ServerSocket new_socket;
       server.accept(new_socket);
+      server.getClientName(new_socket);
       try{
 	while(true){
 	  std::string data;

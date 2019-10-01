@@ -20,7 +20,8 @@ int main ( int argc, char* argv[] )
 	      while(true){
 		std::string data;
 		serv_soc >> data;
-		serv_soc << data; 
+		std::cout<<serv_soc.getClientName();
+		serv_soc <<"Greetings from Server "<< data; 
 	      }
 	      
 	    }
